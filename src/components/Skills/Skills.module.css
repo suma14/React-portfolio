@@ -1,0 +1,78 @@
+/* Container for the skills section */
+
+.skills {
+    margin: 5rem auto;
+    padding: 3rem 2rem;
+    border-radius: 14px;
+    background: linear-gradient(
+        180deg,
+        rgba(18, 5, 34, 0.95),
+        rgba(12, 3, 24, 0.95)
+    );
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Section title */
+.sectionTitle {
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    background: linear-gradient(45deg, #ea00ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Category container */
+.skillCategory {
+    margin-bottom: 2rem;
+}
+
+/* Category title */
+.categoryTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f1edff;
+    margin-bottom: 1rem;
+}
+
+/* Skill list */
+.skillList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+/* Individual skill badge */
+.skillItem {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 999px;
+    background: rgba(3, 213, 255, 0.15);
+    border: 1px solid rgba(3, 213, 255, 0.3);
+    color: #e6f9ff;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+}
+
+.skillItem:hover {
+    background: rgba(234, 0, 255, 0.2);
+    border-color: rgba(234, 0, 255, 0.4);
+    cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills {
+        padding: 2.2rem 1.5rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.9rem;
+    }
+}

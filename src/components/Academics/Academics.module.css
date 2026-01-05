@@ -1,0 +1,134 @@
+/* ==============================
+   Academics Section (CSS Module)
+   ============================== */
+
+.academics {
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  border-radius: 14px;
+  background: linear-gradient(
+    180deg,
+    rgba(27, 8, 47, 0.95),
+    rgba(20, 5, 36, 0.95)
+  );
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Section title */
+.sectionTitle {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #ea00ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid layout */
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Academic card */
+.card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 16px;
+  background: radial-gradient(circle at top, #2a0f4a, #18062c);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+}
+
+/* Decorative hover gradient */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(234, 0, 255, 0.15),
+    rgba(3, 213, 255, 0.15),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Icon / Logo */
+.icon {
+  height: 3.5rem;
+  margin-bottom: 1.25rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
+}
+
+/* Degree */
+.degree {
+  margin: 0.4rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f1edff;
+}
+
+/* University */
+.university {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #c9c1ff;
+}
+
+/* Meta info */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #b6b0ff;
+  opacity: 0.85;
+}
+
+/* Separator */
+.separator {
+  opacity: 0.6;
+}
+
+/* Description */
+.description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .academics {
+    padding: 2.2rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.9rem;
+  }
+}

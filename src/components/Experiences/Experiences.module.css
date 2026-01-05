@@ -1,0 +1,114 @@
+/* ==============================
+   Experience Section
+   ============================== */
+
+.experience {
+  margin: 5rem auto;
+  padding: 3rem 2rem;
+  border-radius: 14px;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 5, 34, 0.95),
+    rgba(12, 3, 24, 0.95)
+  );
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+.sectionTitle {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #03d5ff, #ea00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* List */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Card */
+.card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: radial-gradient(circle at top, #1f0b36, #12051f);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Company logo */
+.logo {
+  height: 3.2rem;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
+}
+
+/* Role */
+.role {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f2eeff;
+}
+
+/* Company */
+.company {
+  margin: 0.15rem 0 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #c7bfff;
+}
+
+/* Meta info */
+.meta {
+  margin: 0.75rem 0 1rem;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #b2aaff;
+  opacity: 0.85;
+}
+
+.separator {
+  opacity: 0.6;
+}
+
+/* Description */
+.description {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience {
+    padding: 2.2rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.9rem;
+  }
+}
