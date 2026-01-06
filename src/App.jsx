@@ -1,6 +1,6 @@
 // import reactImg from './assets/react-core-concepts.png'; // Importing image useful in deployment 
 // import componentsImg from './assets/components.png'; // Importing image useful in deployment
-import {use, useState, Fragment} from 'react';
+import { useState} from 'react';
 import { SKILLS} from './data.js'; // Importing data from data.js
 import Header from './components/Header/Header.jsx';
 
@@ -12,7 +12,6 @@ import Contacts from './components/Contact/Contacts.jsx';
 import TabButton from './components/TabButton.jsx'; 
 import Tabs from './components/Tabs.jsx';
 import Section from './components/Section.jsx';
-
 
 // function CoreConceptsList(props) {
 //   return (
