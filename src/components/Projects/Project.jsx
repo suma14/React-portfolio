@@ -3,6 +3,7 @@ import styles from "./Projects.module.css";
 export default function Project({
   img,
   title,
+  githubLink,
   university,
   period,
   place,
@@ -11,9 +12,27 @@ export default function Project({
 }) {
   return (
     <li className={styles.card}>
-      <img src={img} alt={title} className={styles.image} />
+      {/* Clickable Image */}
+      <a
+        href={githubLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.link}
+      >
+        <img src={img} alt={title} className={styles.image} />
+      </a>
 
-      <h3 className={styles.title}>{title}</h3>
+      {/* Clickable Title */}
+      <h3 className={styles.title}>
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
+          {title}
+        </a>
+      </h3>
 
       <h4 className={styles.organization}>{university}</h4>
 

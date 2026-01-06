@@ -147,3 +147,22 @@
     height: 160px;
   }
 }
+
+
+/* Clickable link wrapper */
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Title hover effect */
+.title a:hover {
+  text-decoration: underline;
+  color: #03d5ff;
+}
+
+/* Image hover cursor */
+.image {
+  cursor: pointer;
+}

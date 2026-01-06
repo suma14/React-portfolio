@@ -1,12 +1,13 @@
-import componentsImg from './assets/components.png';
-import propsImg from './assets/config.png';  
-import jsxImg from './assets/jsx-ui.png';
-import stateImg from './assets/state-mgmt.png';
 import MSTImg from './assets/MST-Logo.jpg';
 import GcetImg from './assets/GCET-Logo.jpeg';
 import teachnookImg from './assets/immensphere_logo.jpeg';
 import cognizantImg from './assets/cognizant-logo.png';
 import protfolioImg from './assets/proj-portfolio.png';
+import ekartImg from './assets/ekart.png';
+import citiImg from './assets/citibike-dashboard.png';
+import covidImg from './assets/COVID-19.png';
+import bigmartImg from './assets/Bigmart.png';
+import suicideImg from './assets/Suicide.png';
 
 export const ACADEMICS = [
   {
@@ -58,6 +59,7 @@ export const PROJECTS=[
   {
     img :protfolioImg,
     title:" Personal Portfolio Website",
+    githubLink:"https://github.com/suma14/React-portfolio",
     university:"Self-Initiated Project",
     period:"March 2024 – April 2024",
     place:"Rolla, MO, USA",
@@ -65,8 +67,9 @@ export const PROJECTS=[
     technologies:["React","JavaScript","HTML","CSS","VS Code"]
   },
   {
-    img :jsxImg,
+    img :ekartImg,
     title:"Ekart Shopping Platform using NodeJS",
+    githubLink:"https://github.com/suma14/Node-app",
     university:"Self-Initiated Project",        
     period:"Dec 2022 – Jan 2023",
     place:"Hyderabad, India",
@@ -74,8 +77,9 @@ export const PROJECTS=[
     technologies:["ExpressJS","Java","HTML","CSS","NodeJS","EJS","JavaScript","SQL","MongoDB","REST APIs","VS Code"]
   },
   {
-    img :componentsImg,
+    img :citiImg,
     title:" Citi Bikes Data Analysis in NYC (SAP)",
+    githubLink:"https://github.com/suma14/Citi-Bikes-Data-Analysis-in-NYC-using-SAP",
     university:"Self-Initiated Project",        
     period:"Sep 2022 – Oct 2022",
     place:"Hyderabad, India",
@@ -83,8 +87,9 @@ export const PROJECTS=[
     technologies:["SAP HANA","SAP Analytics"]
   },
   {
-    img :stateImg,
+    img :bigmartImg,
     title:" Big Mart Sales Prediction",
+    githubLink:"https://github.com/suma14/Big-mart-sales-prediction",
     university:"Self-Initiated Project",    
     period:"Jul 2022 – Aug 2022",
     place:"Hyderabad, India",
@@ -92,8 +97,9 @@ export const PROJECTS=[
     technologies:["Python","Pandas","Scikit-learn","Matplotlib","Seaborn","XGBoost"]
   },
   {
-    img :stateImg,
+    img :suicideImg,
     title:"Suicide Rate Trend Analysis",
+    githubLink:"https://github.com/suma14/Suicide-rate-trend-analysis",
     university:"Self-Initiated Project",    
     period:"Aug 2023 – Oct 2023",
     place:"Hyderabad, India",
@@ -101,8 +107,9 @@ export const PROJECTS=[
     technologies:["Python","Pandas","NumPy","Matplotlib","Seaborn"]
   },
   {
-    img :stateImg,
+    img :covidImg,
     title:"COVID-19 Tweet Sentiment Analysis",
+    githubLink:"https://github.com/suma14/COVID-19-Tweet-Sentiment-Analysis",
     university:"Self-Initiated Project",    
     period:"Mar 2022 – May 2022",
     place:"Hyderabad, India",
@@ -211,59 +218,3 @@ export const CONTACT_INFO = [
     detail: "linkedin.com/in/suma-gurugubelli",
   }
 ]
-
-
-
-
-
-
-export const EXAMPLES = {
-  Home: {
-    title: 'Home',
-    description:
-      'Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.',
-    code: `
-function Welcome() {
-  return <h1>Hello, World!</h1>;
-}`,
-  },
-  About: {
-    title: 'About',
-    description:
-      'JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).',
-    code: `
-<div>
-  <h1>Welcome {userName}</h1>
-  <p>Time to learn React!</p>
-</div>`,
-  },
-  Experience: {
-    title: 'Experience',
-    description:
-      'Components accept arbitrary inputs called props. They are like function arguments.',
-    code: `
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}`,
-  },
-  Projects: {
-    title: 'Projects',
-    description:
-      'State allows React components to change their output over time in response to user actions, network responses, and anything else.',
-    code: `
-function Counter() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  function handleClick() {
-    setIsVisible(true);
-  }
-
-  return (
-    <div>
-      <button onClick={handleClick}>Show Details</button>
-      {isVisible && <p>Amazing details!</p>}
-    </div>
-  );
-}`,
-  },
-};
