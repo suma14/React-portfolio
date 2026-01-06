@@ -16,7 +16,7 @@ export const ACADEMICS = [
     university:"Missouri University of Science and Technology",
     period:"August 2023 - May 2025",
     place:"Rolla, MO, USA",
-    description:"Focusing on advanced data analysis, machine learning, and full-stack development with hands-on experience in modern technologies and frameworks."
+    description:"Focusing on advanced data analysis, SAP, machine learning, and full-stack development with hands-on experience in modern technologies and frameworks."
   },
   {
     img :GcetImg,
@@ -31,11 +31,11 @@ export const ACADEMICS = [
 export const EXPERIENCE=[
   {
     img :MSTImg,
-    role:"Graduate Teaching Assistant",
+    role:"Research Assistant",
     company:"Missouri University of Science and Technology",
     period:"August 2023 – Present",
     location:"Rolla, MO, USA",
-    description:"Assisting in teaching undergraduate courses related to data science and programming. Responsibilities include conducting lab sessions, grading assignments, and providing support to students."
+    description:"Conducting AR research using Unity and Vuforia o study user perception and interaction across digital environments and AR glasses."
   },
   {
     img :teachnookImg,
@@ -51,7 +51,7 @@ export const EXPERIENCE=[
     company:"Cognizant Technology Services (CTS)",
     period:"Jan 2022 – Oct 2022",
     location:"Hyderabad, India",
-    description:"Worked with Oracle HCM Fusion and SQL for full stack development. Developed BI Publisher reports and conducted system analysis to ensure application functionality and data integrity."  
+    description:"Worked with Oracle HCM Fusion and SQL. Developed BI Publisher reports and conducted system analysis to ensure application functionality and data integrity."  
   }
 ]
 
@@ -113,7 +113,7 @@ export const PROJECTS=[
     university:"Self-Initiated Project",    
     period:"Mar 2022 – May 2022",
     place:"Hyderabad, India",
-    description:"Performed end-to-end sentiment analysis on COVID-19–related tweets to extract public opinion insights. Cleaned and preprocessed unstructured text data using regex, stop word removal, stemming, and tokenization. Applied one-hot encoding and sequence padding to prepare data for analysis.",
+    description:"Performed end-to-end sentiment analysis on COVID-19–related tweets to extract public opinion insights. Cleaned and preprocessed unstructured text data using regex, stop word removal, stemming, and tokenization. Applied one-hot encoding and sequence padding to prepare data for analysis.Built and evaluated an LSTM neural network in Keras/TensorFlow to classify sentiment categories.",
     technologies: ["Python","Pandas","NLTK","Seaborn","Matplotlib","Scikit-learn","Keras","TensorFlow"]
   }
 ];
