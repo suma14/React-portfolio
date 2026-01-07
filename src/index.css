@@ -85,4 +85,13 @@ main {
   font-size: 1rem;
 } 
 
-
+.tabsNav {
+  position: sticky;      
+  top: 0;                
+  z-index: 1000;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(6px); 
+}
+section {
+  scroll-margin-top: 80px; 
+}
